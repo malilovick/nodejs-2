@@ -53,6 +53,14 @@ app.get("/about", (req, res) => {
   });
 });
 
+app.get("/portifolio", (req, res) => {
+  res.render("portifolio.hbs", {
+    pageTitle: "Portifolio",
+    projectTitle: 'Estudo NodeJs',
+    projectDescription: "Atividade final do modulo webserver express.jss"
+  });
+});
+
 app.get("/bad", (req, res) => {
   res.send({
     errorMessage: "Bad Request"
